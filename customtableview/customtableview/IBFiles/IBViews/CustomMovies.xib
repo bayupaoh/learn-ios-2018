@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomMovies" rowHeight="171" id="A1w-47-MBL" customClass="CustomMovieCell" customModule="customtableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A1w-47-MBL" id="1NU-zz-e5H">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="170.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yi1-Ze-61d">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="171"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="171" id="OVy-ig-x6P"/>
+                            <constraint firstAttribute="width" constant="143" id="jeQ-g4-KWQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vl-jh-QPc">
+                        <rect key="frame" x="165" y="0.0" width="210" height="26"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upV-UZ-wps">
+                        <rect key="frame" x="165" y="38" width="210" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yi1-Ze-61d" firstAttribute="top" secondItem="1NU-zz-e5H" secondAttribute="top" id="521-zF-8PX"/>
+                    <constraint firstItem="yi1-Ze-61d" firstAttribute="leading" secondItem="1NU-zz-e5H" secondAttribute="leading" id="5PI-Le-tg6"/>
+                    <constraint firstAttribute="trailing" secondItem="4Vl-jh-QPc" secondAttribute="trailing" id="6vL-3R-lLz"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="upV-UZ-wps" secondAttribute="bottom" id="7fw-Ch-lOc"/>
+                    <constraint firstItem="upV-UZ-wps" firstAttribute="leading" secondItem="yi1-Ze-61d" secondAttribute="trailing" constant="22" id="KOn-JF-NwO"/>
+                    <constraint firstAttribute="trailing" secondItem="upV-UZ-wps" secondAttribute="trailing" id="MBt-33-l2y"/>
+                    <constraint firstItem="4Vl-jh-QPc" firstAttribute="leading" secondItem="yi1-Ze-61d" secondAttribute="trailing" constant="22" id="PbK-ex-pij"/>
+                    <constraint firstItem="upV-UZ-wps" firstAttribute="top" secondItem="4Vl-jh-QPc" secondAttribute="bottom" constant="12" id="SIM-8D-Ypn"/>
+                    <constraint firstItem="upV-UZ-wps" firstAttribute="top" secondItem="4Vl-jh-QPc" secondAttribute="bottom" constant="12" id="SQk-za-HAf"/>
+                    <constraint firstItem="4Vl-jh-QPc" firstAttribute="top" secondItem="1NU-zz-e5H" secondAttribute="top" id="Y98-Fn-Nme"/>
+                    <constraint firstItem="4Vl-jh-QPc" firstAttribute="leading" secondItem="yi1-Ze-61d" secondAttribute="trailing" constant="22" id="iFT-kJ-6Z6"/>
+                    <constraint firstAttribute="bottom" secondItem="yi1-Ze-61d" secondAttribute="bottom" id="usY-LM-BRx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="customMovieDesc" destination="upV-UZ-wps" id="oIq-P5-icA"/>
+                <outlet property="customMovieImg" destination="yi1-Ze-61d" id="Ob5-f3-8a7"/>
+                <outlet property="customMovieTitle" destination="4Vl-jh-QPc" id="dBr-Cy-dPZ"/>
+            </connections>
+            <point key="canvasLocation" x="-136.5" y="-341.5"/>
+        </tableViewCell>
+    </objects>
+</document>
