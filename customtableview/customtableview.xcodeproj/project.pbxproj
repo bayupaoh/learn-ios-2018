@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		20B2AC67214F692600580691 /* CustomMovies.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B2AC66214F692600580691 /* CustomMovies.xib */; };
 		20B2AC69214F762600580691 /* CustomMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2AC68214F762600580691 /* CustomMovieCell.swift */; };
+		20B2AC6B214FB91A00580691 /* ResponseMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2AC6A214FB91A00580691 /* ResponseMovie.swift */; };
 		20F6634E214E39E20017AD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6634D214E39E20017AD7C /* AppDelegate.swift */; };
 		20F66350214E39E20017AD7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6634F214E39E20017AD7C /* ViewController.swift */; };
 		20F66353214E39E20017AD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F66351214E39E20017AD7C /* Main.storyboard */; };
 		20F66355214E39E20017AD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F66354214E39E20017AD7C /* Assets.xcassets */; };
 		20F66358214E39E20017AD7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F66356214E39E20017AD7C /* LaunchScreen.storyboard */; };
-		20F66360214E3D8B0017AD7C /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F6635F214E3D8B0017AD7C /* CustomViewCell.swift */; };
 		20F66362214E40EF0017AD7C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F66361214E40EF0017AD7C /* Movie.swift */; };
+		E6D1A948E395A9FAE2236196 /* Pods_customtableview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C623E1DC9AD16CA5B03E7989 /* Pods_customtableview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20B2AC66214F692600580691 /* CustomMovies.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMovies.xib; sourceTree = "<group>"; };
 		20B2AC68214F762600580691 /* CustomMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMovieCell.swift; sourceTree = "<group>"; };
+		20B2AC6A214FB91A00580691 /* ResponseMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMovie.swift; sourceTree = "<group>"; };
 		20F6634A214E39E20017AD7C /* customtableview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customtableview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F6634D214E39E20017AD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F6634F214E39E20017AD7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +30,10 @@
 		20F66354214E39E20017AD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F66357214E39E20017AD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F66359214E39E20017AD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20F6635F214E3D8B0017AD7C /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		20F66361214E40EF0017AD7C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6D46266ED2D6339DADA263CE /* Pods-customtableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customtableview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-customtableview/Pods-customtableview.debug.xcconfig"; sourceTree = "<group>"; };
+		C623E1DC9AD16CA5B03E7989 /* Pods_customtableview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_customtableview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6FE32A40B3F29754B707DC /* Pods-customtableview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-customtableview.release.xcconfig"; path = "Pods/Target Support Files/Pods-customtableview/Pods-customtableview.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +41,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D1A948E395A9FAE2236196 /* Pods_customtableview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1473DE543FB2E3E73CE0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C623E1DC9AD16CA5B03E7989 /* Pods_customtableview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		20B2AC5D214F634600580691 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				20F66361214E40EF0017AD7C /* Movie.swift */,
+				20B2AC6A214FB91A00580691 /* ResponseMovie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +119,8 @@
 			children = (
 				20F6634C214E39E20017AD7C /* customtableview */,
 				20F6634B214E39E20017AD7C /* Products */,
+				DEE18285EE412C5EDF2C4514 /* Pods */,
+				0B1473DE543FB2E3E73CE0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,12 +140,20 @@
 				20B2AC60214F63CC00580691 /* Views */,
 				20B2AC5F214F637000580691 /* ViewControllers */,
 				20F6634D214E39E20017AD7C /* AppDelegate.swift */,
-				20F6635F214E3D8B0017AD7C /* CustomViewCell.swift */,
 				20F66354214E39E20017AD7C /* Assets.xcassets */,
 				20F66356214E39E20017AD7C /* LaunchScreen.storyboard */,
 				20F66359214E39E20017AD7C /* Info.plist */,
 			);
 			path = customtableview;
+			sourceTree = "<group>";
+		};
+		DEE18285EE412C5EDF2C4514 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D46266ED2D6339DADA263CE /* Pods-customtableview.debug.xcconfig */,
+				CE6FE32A40B3F29754B707DC /* Pods-customtableview.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F6635C214E39E20017AD7C /* Build configuration list for PBXNativeTarget "customtableview" */;
 			buildPhases = (
+				20115B64CD29DE53C5DC2434 /* [CP] Check Pods Manifest.lock */,
 				20F66346214E39E20017AD7C /* Sources */,
 				20F66347214E39E20017AD7C /* Frameworks */,
 				20F66348214E39E20017AD7C /* Resources */,
+				8E0BB636146B32351E721F9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,14 +226,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20115B64CD29DE53C5DC2434 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-customtableview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E0BB636146B32351E721F9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-customtableview/Pods-customtableview-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-customtableview/Pods-customtableview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20F66346214E39E20017AD7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				20F66350214E39E20017AD7C /* ViewController.swift in Sources */,
-				20F66360214E3D8B0017AD7C /* CustomViewCell.swift in Sources */,
 				20F66362214E40EF0017AD7C /* Movie.swift in Sources */,
+				20B2AC6B214FB91A00580691 /* ResponseMovie.swift in Sources */,
 				20B2AC69214F762600580691 /* CustomMovieCell.swift in Sources */,
 				20F6634E214E39E20017AD7C /* AppDelegate.swift in Sources */,
 			);
@@ -344,6 +413,7 @@
 		};
 		20F6635D214E39E20017AD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D46266ED2D6339DADA263CE /* Pods-customtableview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +428,7 @@
 		};
 		20F6635E214E39E20017AD7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6FE32A40B3F29754B707DC /* Pods-customtableview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

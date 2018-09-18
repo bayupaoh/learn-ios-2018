@@ -11,9 +11,9 @@ import UIKit
 class Movie{
     var title:String
     var desc:String
-    var imageMovie : UIImage
+    var imageMovie : String
     
-    init(title:String,desc:String,imageMovie : UIImage) {
+    init(title:String,desc:String,imageMovie : String) {
         self.title = title
         self.desc=desc
         self.imageMovie=imageMovie
