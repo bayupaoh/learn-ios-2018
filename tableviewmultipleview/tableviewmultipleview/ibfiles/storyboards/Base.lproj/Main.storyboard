@@ -13,32 +13,31 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="customtableview" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableviewmultipleview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cnA-Ki-uaU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iIQ-bY-wxh">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cnA-Ki-uaU" secondAttribute="bottom" id="AUZ-CR-reb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cnA-Ki-uaU" secondAttribute="trailing" id="F4V-it-LP3"/>
-                            <constraint firstItem="cnA-Ki-uaU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NUA-wX-eUt"/>
-                            <constraint firstItem="cnA-Ki-uaU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vdx-ft-3UP"/>
+                            <constraint firstItem="iIQ-bY-wxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0mK-wW-c8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iIQ-bY-wxh" secondAttribute="trailing" id="eSL-3D-mI2"/>
+                            <constraint firstItem="iIQ-bY-wxh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qWs-5T-odQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iIQ-bY-wxh" secondAttribute="bottom" id="r4h-cG-xnQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="tableViewMovie" destination="cnA-Ki-uaU" id="7Kj-Oi-tSN"/>
+                        <outlet property="tableViewTimeline" destination="iIQ-bY-wxh" id="17r-Ys-P9O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

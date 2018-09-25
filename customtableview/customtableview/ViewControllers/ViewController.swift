@@ -10,11 +10,26 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+// Protocol
+// Enum
+// Nama Class
+//  IBOutlet
+//  Var
+//  Statcs
+//  Overides
+//  IBActions
+//  functions
+// extension
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableViewMovie: UITableView!
+    
     var movie:[Movie]=[]
     let sessionMAnager = SessionManager()
+    
+    // MARK: OVERRIDES
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +42,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: FUNCTIONS
+    
     func initTableView(){
         tableViewMovie.dataSource = self
         tableViewMovie.delegate = self
@@ -35,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     func getData(){
-        sessionMAnager.request(URL(string:"https://api.themoviedb.org/3/discover/movie?api_key=1b2f29d43bf2e4f3142530bc6929d341&sort_by=popularity.desc")!, method: HTTPMethod.get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
+        sessionMAnager.request(URL(string:"https://api.themoviedb.org/3/discover/movie?api_key=1b2f29d43bf2e4f3142530bc6929d341&sort_by=popularity.desc")!, method: HTTPMethod.get, parameters: nil encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
             switch response.result {
             case let .success(value):
                 let responseParse = JSON(value)
@@ -52,6 +69,8 @@ class ViewController: UIViewController {
     }
     
 }
+
+// MARK: EXTENSIONS
 
 extension ViewController : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
