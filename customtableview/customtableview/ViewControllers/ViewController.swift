@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
     
     func getData(){
-        sessionMAnager.request(URL(string:"https://api.themoviedb.org/3/discover/movie?api_key=1b2f29d43bf2e4f3142530bc6929d341&sort_by=popularity.desc")!, method: HTTPMethod.get, parameters: nil encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
+        sessionMAnager.request(URL(string:"https://api.themoviedb.org/3/discover/movie?api_key=1b2f29d43bf2e4f3142530bc6929d341&sort_by=popularity.desc")!, method: HTTPMethod.get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseJSON(completionHandler: { response in
             switch response.result {
             case let .success(value):
                 let responseParse = JSON(value)
